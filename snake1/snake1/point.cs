@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace snake1
 {
-    class point
+    class Point
     {
         public int x;
         public int y;
         public char sym;
 
-        public point(int _x, int _y, char _sym)
+        public Point()
+        {
+        }
+
+        public Point(int _x, int _y, char _sym)
         {
             x = _x;
             y = _y;
@@ -21,7 +25,7 @@ namespace snake1
 
         public void Draw()
         {
-            Console.SetCursorPosition(x,y);
+            Console.SetCursorPosition(x, y);
             Console.Write(sym);
         }
     }
